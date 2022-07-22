@@ -1,24 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:practice_projects_14/views/posts_detail_page.dart';
 
-import 'views/getx_homepage.dart';
+import './categories_screen.dart';
 
-void main() {
-  runApp(const MyApp());
-}
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'DeliMeals',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home:  PostDetail(),
+      home: CategoriesScreen(),
     );
   }
 }
